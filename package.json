@@ -1,0 +1,25 @@
+{
+  "name": "mendix-app-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "node_modules\\.bin\\cypress",
+    "cypress:open": "npm run cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shelterbox/Mendix-app-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shelterbox/Mendix-app-testing/issues"
+  },
+  "homepage": "https://github.com/shelterbox/Mendix-app-testing#readme"
+}
