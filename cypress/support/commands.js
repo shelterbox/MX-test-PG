@@ -60,6 +60,7 @@ Cypress.Commands.add('login', (host, username, password) => {
 Cypress.Commands.add('logout', (host) => {
   if (host) {
     // POST request Mendix XAS endpoint to login
+    host = host.replace(/[\/]$/gm, '');
     cy.request({
       url: `${host}/xas/`,
       method: 'POST',
@@ -76,4 +77,14 @@ Cypress.Commands.add('logout', (host) => {
     })
   }
   else throw Error('Invalid host')
+})
+
+// Select option with given label
+Cypress.Commands.add('selectLabel', { prevSubject: 'element' }, (subject, label) => {
+  cy.wrap(subject)
+    .children('option')
+    .contains(label)
+    .then(element => {
+      cy.wrap(subject).select(element.val())
+    })
 })

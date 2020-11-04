@@ -26,5 +26,16 @@ declare namespace Cypress {
     * cy.logout(host)
     */
     logout(host: string): Chainable<Subject>
+
+    /**
+    * Select a given option label on a select input
+    * @see https://github.com/shelterbox/Mendix-app-testing
+    * @example
+    * cy.contains('Title')
+    *   .parent()
+    *   .find('select')
+    *   .selectLabel('Mr')
+    */
+    selectLabel(label: string): Chainable<Subject>
   }
 }
