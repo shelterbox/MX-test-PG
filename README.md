@@ -1,5 +1,5 @@
 # Mendix app testing 🧪
-Automated tests using [Cypress JS](https://www.cypress.io/)
+Automated client-side testing using [Cypress JS](https://www.cypress.io/).
 
 ## How to setup 💾
 This repository is used to create/manage/run automated test in Cypress for Mendix applications.   
